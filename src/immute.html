@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Immute</title>
+  </head>
+
+  <body>
+    <script>
+      // const str2 = "abc";
+      // str2.myNewProperty = "some value";
+      // alert(str2.myNewProperty);
+
+      const str = new String("abc");
+      str.myNewProperty = "some value";
+      console.log(str.myNewProperty);
+      str.myNewProperty = "a new value";
+      console.log(str.myNewProperty);
+
+      //Reference equality vs value equality
+      //These are beacause the reference are equal
+      var str1 = "abc";
+      var str2 = str1;
+      console.log(str1 === str2); // true"
+
+      var n1 = 1;
+      var n2 = 1;
+      console.log(n1 === n2); // true
+
+      //Working with Objects
+      //In each of these cases, two different objects are created and therefore, their references are not equal:
+      var str3 = new String("abc");
+      var str4 = new String("abc");
+      console.log(str3 === str4); // false
+      var arr1 = [];
+      var arr2 = [];
+      console.log(arr1 === arr2); // false
+      //methods valueOf or trim that return a String value:
+
+      console.log(str3.valueOf() === str4.valueOf());
+      console.log(str3.trim() === str4.trim());
+
+      const modifyShirt = (shirt, newColor, newSize) => {
+        return {
+          id: shirt.id,
+          desc: shirt.desc,
+          color: newColor,
+          size: newSize,
+        };
+      };
+      let shirtOb = modifyShirt("Rayon", "white", "28");
+      console.log(shirtOb.color);
+
+      const modifyShirt2 = (shirt, newColor, newSize) => {
+        return Object.assign({}, shirt, {
+          color: newColor,
+          size: newSize,
+        });
+      };
+      let ob = modifyShirt2("Rayon", "blue", "28");
+      console.log(ob.color);
+
+      const addValue11 = (arr) => {
+        return [...arr, 1];
+      };
+      let x = addValue11([1, 2, 3]);
+      console.log(x);
+
+      let arr = [1, 2, 3, 4, 5, 6];
+      const addValue = (arr) => {
+        return [...arr, 1];
+      };
+      console.log(addValue(arr));
+
+      const addValue1 = (arr) => {
+        return arr.concat([1]);
+      };
+      console.log(addValue1(arr));
+
+      const removeValue = (arr, index) => {
+        // [1,2,3] .concat [5,6]
+        return arr.slice(0, index).concat(arr.slice(index + 1));
+      };
+      console.log(removeValue(arr, 3));
+      console.log(arr);
+    </script>
+  </body>
+</html>

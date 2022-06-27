@@ -1,0 +1,225 @@
+.App {
+  text-align: center;
+  padding: 10px;
+  border: 4px solid #04283f;
+  /* background-color: rgb(109, 135, 161); */
+  /* background-color: #04283f; */
+}
+.App-div {
+  text-align: center;
+  border: 4px solid green;
+  padding: 10px;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.text-danger {
+  color: red;
+}
+.content {
+  text-align: center;
+}
+input,
+textarea {
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+}
+button {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+  background-color: #0e4049;
+  font-weight: bold;
+  color: white;
+}
+.delBtn {
+  background-color: gray;
+  color: black;
+}
+.clearBtn {
+  background-color: rgb(104, 29, 29);
+}
+table {
+  margin: auto;
+  background: linear-gradient(90deg, #0b365a, gray);
+  color: white;
+  border-radius: 15px;
+}
+td {
+  text-align: left;
+  padding: 0 20px;
+}
+.div-time {
+  color: red;
+}
+/* textarea{
+  margin: 10px;
+}
+.checkbox{
+  text-align: left;
+  margin-left:200px ;
+  
+}
+table{
+  border-collapse: collapse;
+  margin: auto;
+  border: 2px solid #ddd;
+}
+th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04283f;
+  color: white;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  
+}
+td{
+  text-align: left;
+}
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+.card{
+  border: 2px solid white;
+  width: 47%;
+  float: left;
+  box-shadow: 5px 10px 10px rgb(119, 118, 118);
+  background:radial-gradient(circle,rgb(146, 236, 236),rgb(2, 58, 87));
+  
+} */
+
+/*input{
+  display: block;
+  padding: 5px;
+  margin: 20px;
+}
+.menu{
+  border: 4px solid grey;
+  overflow: hidden;
+  background:burlywood;
+
+}
+.menu a{
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.menu a:hover{
+  background-color: rgb(80, 78, 78);
+  color: white;
+}
+
+.form{
+  width: 50%;
+  margin: 10px auto;
+  background-color: white;
+  border-radius: 10px;
+}
+input{
+  width: 75%;
+  display: block;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+button{
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(13, 13, 231, 0.829);
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border: 4px solid grey;
+  background-color:rgb(137, 235, 238);
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  width: 38%;
+  margin: 20px auto;
+  background-color: white;
+}
+td, th {
+  border: 2px solid #979696;
+  text-align: left;
+  padding: 10px;
+}
+.counter{
+  margin-bottom: 100px;
+  border: 2px solid black;
+  width: fit-content;
+  margin: 20px auto 200px auto;
+}
+
+.counter button{
+  margin: 15px;
+}
+.counter .inc{
+  background-color: green;
+}
+.counter .dec{
+  background-color: gray;
+}
+.counter .reset{
+  background-color: blue;
+}
+*/
+.border {
+  border: 4px solid lightseagreen;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media screen and (max-width: 599px) {
+  .form {
+    width: 100%;
+  }
+  table {
+    width: 50%;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
